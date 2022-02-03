@@ -10,7 +10,7 @@ const refs = {
 const onSubmit = e => {
     e.preventDefault();
 
-    if ((!refEmail.value) || (!refPassword.value)) {
+    if ((!refEmail.value.trim()) || (!refPassword.value.trim())) {
         alert('Enter some text!');
         return;
     }

@@ -1,17 +1,19 @@
 const refsInputNumber = document.querySelector('#validation-input');
 
 refsInputNumber.addEventListener("blur", () => {
-
-   if (refsInputNumber.value.length === Number(refsInputNumber.dataset.length)) {
-        refsInputNumber.classList.add('valid');
-        refsInputNumber.classList.remove('invalid');
-    } else {
-     refsInputNumber.classList.add('invalid');
-     refsInputNumber.classList.remove('valid');
-    }
+  const textInputData = Number(refsInputNumber.dataset.length);
+   if (refsInputNumber.value.length === textInputData) {
+       replaceClasses('valid', 'invalid');
+       return;
+   }
+    replaceClasses('invalid', 'valid');
 
 });
 
+const replaceClasses = (classToAdd, classToRemove) => {
+  refsInputNumber.classList.add(classToAdd);
+  refsInputNumber.classList.remove(classToRemove);
+}
 
 
 

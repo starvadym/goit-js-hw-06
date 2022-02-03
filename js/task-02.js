@@ -12,7 +12,7 @@ const list = document.querySelector('#ingredients');
 // Создаем виртуально каждый элемент списка li
 
 const ingreds = ingredients.map(ingredient => {
-  const liRef = document.createElement('li');
+const liRef = document.createElement('li');
 
 // Присваивание значения класса
 

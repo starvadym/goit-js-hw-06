@@ -18,7 +18,7 @@ const listRef = document.querySelector('.gallery');
 const markup = images
   .map(({ url, alt }) => {
   return `<li>
-        <img src="${url}" alt="${alt}" width = 600px>
+        <img src="${url}" alt="${alt}" width = 400px>
       </li>
     `
   })
