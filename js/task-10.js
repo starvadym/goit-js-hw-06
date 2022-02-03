@@ -26,10 +26,12 @@ refBtnCreate.addEventListener('click', () => {
 });
 
 refBtnDestroy.addEventListener('click', () => {
-  destroyBoxes();
+  destroyBoxes(refInput.value);
 });
 
-const destroyBoxes = () => {
-  const createDiv = document.querySelector('.new');
-  createDiv.remove();
+const destroyBoxes = (amount) => {
+  for (let i = 1; i <= amount; i += 1) {
+    const deleteDiv = document.querySelector('.new');
+    deleteDiv.remove();
+  }
 }
