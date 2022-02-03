@@ -1,7 +1,7 @@
 const refs = {
     form: document.querySelector('.login-form'),
-    email: document.querySelector('input[name="email"]'),
-    password: document.querySelector('input[name="password"]'),
+    // email: document.querySelector('input[name="email"]'),
+    // password: document.querySelector('input[name="password"]'),
 
 };
     const refEmail = refs.form.elements.email;

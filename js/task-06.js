@@ -1,5 +1,6 @@
 const refsInputNumber = document.querySelector('#validation-input');
 
+
 refsInputNumber.addEventListener("blur", () => {
   const textInputData = Number(refsInputNumber.dataset.length);
    if (refsInputNumber.value.length === textInputData) {
